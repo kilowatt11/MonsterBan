@@ -1,4 +1,5 @@
-<html>
+<html ng-app="monsterBan">
+
 <head>
 	<meta charset="utf-8">
 	<title>MonsterBan</title>
@@ -8,8 +9,9 @@
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
 	<link rel="stylesheet" href="site.css">
 </head>
-<body>
-		<nav class="navbar navbar-inverse navbar-fixed-top">
+
+<body ng-controller="AppController as ac">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
 			<a class="navbar-brand">
 				<span class="logo"><i class="fa fa-trello"></i> Monster Kanban</span>
@@ -40,8 +42,12 @@
 			</form>
 		</div>
 	</nav>
-
 	
+		
+			<story-board></story-board>
+		
+	
+
 	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
@@ -50,5 +56,9 @@
 	<script src="https://cdn.jsdelivr.net/lodash/4.11.2/lodash.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js"></script>
 	<script src="app.js"></script>
+	<script src="components/storyBoard.js"></script>
+	<script src="components/storyList.js"></script>
+	<script src="components/storyCard.js"></script>
 </body>
+
 </html>
