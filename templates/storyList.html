@@ -1,5 +1,7 @@
 <div>
-    <button class="btn btn-link" style="color:black" ng-click="sl.delete()">{{sl.list}}</button>
-    <story-card></story-card>
+    <button class="btn btn-link" style="color:black" ng-click="sl.delete()">{{sl.list.name}}</button>
+    <div class="panel panel-default" ng-repeat="card in sl.list.cards">
+        <story-card card="card"></story-card>
+    </div>
 
 </div>

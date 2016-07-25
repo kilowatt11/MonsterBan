@@ -1,4 +1,4 @@
-debugger;
+
 ;(function () {
     angular.module('monsterBan')
         .component('storyList', {
@@ -16,20 +16,15 @@ debugger;
 
     function storyListController() {
         var sl = this
-        sl.cards = [
-            'merge',
-            'copy',
-            'delete',
-        ];
+      
 
         sl.$onInit = function () {
            
             console.log('Lists: ', sl.board.lists);
         };
-        sl.delete = function(){
+       sl.delete = function(){
             sl.board.deleteList(sl.list)
 
         }
-
     }
 } ())

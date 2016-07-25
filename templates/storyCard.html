@@ -1,10 +1,23 @@
 <div>
-    <div class="panel panel-default" ng-repeat="card in sc.list.cards">
-        <div class="panel-heading">
-            <h3 class="panel-title">{{card}}</h3>
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            <button class="btn btn-link" style="color:black" ng-click="sc.delete()">{{sc.card.name}}</button>
+        </h3>
+        <ul>
+            <li ng-repeat="story in sc.card.stories">{{story.name}}</li>
+        </ul>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Move Card
+  <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li ng-click="moveCard('toDo')" ng-model="toDo"><a href="#">To Do</a></li>
+                <li><a href="#">In Progress</a></li>
+                <li><a href="#">Done</a></li>
+            </ul>
         </div>
-        <div class="panel-body">
-            Panel content
-        </div>
+
+    </div>
+    <div class="panel-body">
+        Panel content
     </div>
 </div>

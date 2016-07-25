@@ -1,7 +1,7 @@
 
 
 ;(function () {
-    debugger;
+
     angular.module('monsterBan')
         .component('storyCard', {
             templateUrl: 'templates/storyCard.html',
@@ -18,16 +18,24 @@
 
     function storyCardController() {
         var sc = this
-        debugger;
+    
         
         sc.$onInit = function () {
            
-            console.log('Cards: ', sc.list.cards);
+            // console.log('Cards: ', sc.list.cards);
         };
-        // sc.delete = function(){
-        //     sc.story.deleteList(sc.story)
+        sc.delete = function(){
+            sc.list.deleteCard(sc.card)
 
-        // }
+        }
+        sc.moveCard = function(card){
+            for(var i = 0;i < sb.lists;i++){
+                var currentCard = sb.list[i]
+
+            }
+
+
+        }
 
     }
 } ())
