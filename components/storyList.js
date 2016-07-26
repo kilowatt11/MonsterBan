@@ -27,7 +27,7 @@
 
         }
         sl.moveCard = function(card, x){
-            debugger;
+           
             
             console.log(sl.board.lists)
             for(var i = 0;i < sl.board.lists.length ;i++){
@@ -39,7 +39,7 @@
             }
         }
         sl.removeCard = function(card){
-           debugger;
+           
             for(var i = 0; i< sl.board.lists.length; i ++){
                 var currentList = sl.board.lists[i];
                 for(var j = 0; j< currentList.cards.length;j++){
