@@ -22,22 +22,25 @@
            
             console.log('Lists: ', sl.board.lists);
         };
+
        sl.delete = function(){
             sl.board.deleteList(sl.list)
 
         }
-        sl.moveCard = function(card, x){
+        
+
+        sl.moveCard = function(card, listName){
            
-            
             console.log(sl.board.lists)
             for(var i = 0;i < sl.board.lists.length ;i++){
                 var currentList = sl.board.lists[i]
                 console.log(currentList.name)
-                if(currentList.name == x){
+                if(currentList.name == listName){
                     currentList.cards.push(card)
                 }
             }
         }
+
         sl.removeCard = function(card){
            
             for(var i = 0; i< sl.board.lists.length; i ++){
@@ -50,6 +53,5 @@
                 }
             }
         }
-        
     }
 } ())

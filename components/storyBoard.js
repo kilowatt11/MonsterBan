@@ -16,16 +16,20 @@
             {name:'In-Progress', cards:[{name: 'something', stories: [{name: 'Display Bug', description:'As a user I would....'}]}]},
             {name:'Finished', cards:[{name: 'The Hell', stories: [{name: 'Crap is Broken', description:'As a user I am angry....'}]}]}
         ];
+
+        var i = 500;
+        function assignID(){
+        i++
+        return i;
+        }
+
+
         sb.deleteList = function(list){
             debugger; 
            sb.lists = sb.lists.filter(function(item){
                 return item != list;
             })
         }
-        sb.addList = function(){
-
-        }
-    
 
     }
     

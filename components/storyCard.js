@@ -24,10 +24,10 @@
            
             // console.log('Cards: ', sc.list.cards);
         };
-        sc.move = function(x){
+        sc.move = function(listName){
           
             sc.list.removeCard(sc.card)
-            sc.list.moveCard(sc.card, x)
+            sc.list.moveCard(sc.card, listName)
 
         }
         sc.delete = function(){
