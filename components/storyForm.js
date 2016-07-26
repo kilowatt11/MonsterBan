@@ -33,11 +33,11 @@
                 if(currentList.name == "To-Do"){
                     currentList.cards.push(newCard)
                     console.log(currentList.cards)
+                    sf.card = {};
                     return;
                 }
             }
             
-            sf.addCard = {};
         }
     }
 
