@@ -30,6 +30,9 @@
             sc.list.moveCard(sc.card, x)
 
         }
+        sc.delete = function(){
+            sc.list.removeCard(sc.card)
+        }
         
 
     }
