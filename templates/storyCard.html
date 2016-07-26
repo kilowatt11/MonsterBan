@@ -10,9 +10,9 @@
             <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Move Card
   <span class="caret"></span></button>
             <ul class="dropdown-menu">
-                <li ng-click="moveCard('toDo')" ng-model="toDo"><a href="#">To Do</a></li>
-                <li><a href="#">In Progress</a></li>
-                <li><a href="#">Done</a></li>
+                <li ng-click="sc.move('To-Do')" ><a href="#">To Do</a></li>
+                <li ng-click="sc.move('In-Progress')"><a href="#">In Progress</a></li>
+                <li ng-click="sc.move('Finished')"><a href="#">Finished</a></li>
             </ul>
         </div>
 

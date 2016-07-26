@@ -24,18 +24,13 @@
            
             // console.log('Cards: ', sc.list.cards);
         };
-        sc.delete = function(){
-            sc.list.deleteCard(sc.card)
+        sc.move = function(x){
+            debugger;
+            sc.list.removeCard(sc.card)
+            sc.list.moveCard(sc.card, x)
 
         }
-        sc.moveCard = function(card){
-            for(var i = 0;i < sb.lists;i++){
-                var currentCard = sb.list[i]
-
-            }
-
-
-        }
+        
 
     }
 } ())

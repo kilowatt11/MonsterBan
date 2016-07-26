@@ -26,5 +26,30 @@
             sl.board.deleteList(sl.list)
 
         }
+        sl.moveCard = function(card, x){
+            debugger;
+            
+            console.log(sl.board.lists)
+            for(var i = 0;i < sl.board.lists.length ;i++){
+                var currentList = sl.board.lists[i]
+                console.log(currentList.name)
+                if(currentList.name == x){
+                    currentList.cards.push(card)
+                }
+            }
+        }
+        sl.removeCard = function(card){
+            debugger;
+            for(var i = 0; i< sl.board.lists.length; i ++){
+                var currentList = sl.board.lists[i];
+                for(var i = 0; i< currentList.cards.length;i++){
+                    var currentCard = currentList.cards[i]
+                    if (currentCard.name == card.name) {
+                        return currentList.cards.splice(i, 1)
+                    }
+                }
+            }
+        }
+        
     }
 } ())
