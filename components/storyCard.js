@@ -25,7 +25,7 @@
             // console.log('Cards: ', sc.list.cards);
         };
         sc.move = function(x){
-            debugger;
+          
             sc.list.removeCard(sc.card)
             sc.list.moveCard(sc.card, x)
 
