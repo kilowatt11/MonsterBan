@@ -4,7 +4,8 @@
         <form ng-submit="sf.addCard(sf.card)">
             
             <input ng-model="sf.card.name" />
-            <input ng-model="sf.card.story" />
+            <input ng-model="sf.card.story.name" />
+            <input ng-model="sf.card.story.description" />
             <button type="submit">+</button>
         </form>
     </div>
