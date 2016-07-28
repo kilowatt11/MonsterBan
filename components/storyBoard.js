@@ -23,7 +23,7 @@
         return i;
         }
         sb.addList = function(form){
-            debugger;
+            
             var newForm = {
                 name: form,
                 cards: []
