@@ -22,6 +22,14 @@
         i++
         return i;
         }
+        sb.addList = function(form){
+            debugger;
+            var newForm = {
+                name: form,
+                cards: []
+            }
+            sb.lists.push(newForm)
+        }
 
 
         sb.deleteList = function(list){

@@ -1,7 +1,7 @@
-<div>
-    <button class="btn btn-default btn-sm" ng-click='sf.addCard = !sf.addCard'><i class="fa fa-plus"></i></button>
-    <div ng-if="sf.addCard">
-        <form ng-submit="sf.addCard(sf.card)">
+<!--<div>
+    <button class="btn btn-default btn-sm" ng-click='myForm = !myForm'><i class="fa fa-plus"></i></button>
+    <div>
+        <form ng-submit="sf.addCard(sf.card)" ng-if ="myForm">
             
             <input ng-model="sf.card.name" />
             <input ng-model="sf.card.story.name" />
@@ -9,4 +9,22 @@
             <button type="submit">+</button>
         </form>
     </div>
+</div>-->
+<div class="col-xs-12 col-md-6">
+    <button class="btn btn-default btn-sm" ng-click='myForm = !myForm'><i class="fa fa-plus"></i></button>
+<form ng-submit="sf.addCard(sf.card)" ng-if ="myForm">
+    <div class="form-group">
+        <label for="formGroupExampleInput">Card Title</label>
+        <input type="text" class="form-control" ng-model="sf.card.name" placeholder="Card title">
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Story Title</label>
+        <input type="text" class="form-control" ng-model="sf.card.story.name" placeholder="Story Title">
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Story Description</label>
+        <input type="text" class="form-control" ng-model="sf.card.story.description" placeholder="Story Description">
+    </div>
+    <button type="submit" class="btn btn-info">Add</button>
+</form>
 </div>

@@ -1,16 +1,18 @@
 <div class="storyBoardNav">
 	<!--<button class="btn btn-default btn-sm" title="Add List" ng-click="sb.addList()"><i class="fa fa-plus"></i></button>-->
-	
+
 </div>
 
 <div class="container-fluid storyBoard">
-	
+
 	<div class="row list">
 
-	<story-list class="storyList" ng-repeat="list in sb.lists track by $index" list="list"></story-list>
+		<story-list class="storyList" ng-repeat="list in sb.lists track by $index" list="list"></story-list>
 	</div>
-	<story-form list ="lists"></form-component>
-
+	<div class="row">
+		<list-form lists="sb.lists"></list-form>
+		<story-form list="lists"></story-form-component>
+	</div>
 </div>
 
 <script type="text/ng-template" id="storyListModal.html">

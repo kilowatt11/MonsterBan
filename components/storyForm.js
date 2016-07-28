@@ -18,7 +18,7 @@
         //   console.log(lists)
 
         sf.addCard = function (card) {
-            debugger;
+           
             var newCard = {
                 name: card.name,
                 stories: [{

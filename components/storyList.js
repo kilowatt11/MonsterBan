@@ -22,6 +22,11 @@
            
             console.log('Lists: ', sl.board.lists);
         };
+         sl.getlist = function(){
+             
+            return sl.board.lists
+        }
+        
 
        sl.delete = function(){
             sl.board.deleteList(sl.list)
@@ -30,7 +35,7 @@
         
 
         sl.moveCard = function(card, listName){
-           
+           debugger;
             console.log(sl.board.lists)
             for(var i = 0;i < sl.board.lists.length ;i++){
                 var currentList = sl.board.lists[i]
@@ -42,7 +47,7 @@
         }
 
         sl.removeCard = function(card){
-           
+           debugger;
             for(var i = 0; i< sl.board.lists.length; i ++){
                 var currentList = sl.board.lists[i];
                 for(var j = 0; j< currentList.cards.length;j++){
@@ -53,5 +58,6 @@
                 }
             }
         }
+       
     }
 } ())
